@@ -1,0 +1,613 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="825,5589" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="812,5524" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_DataMerged">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">new DataTable()</CSharpValue>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Invoices">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">new DataTable()</CSharpValue>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Clients">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">new DataTable()</CSharpValue>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Double)" Name="invoiceLossTotals">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="scg:Dictionary(x:String, x:Double)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">new Dictionary&lt;string, double&gt;()</CSharpValue>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message RPADev-S04P02-CalculatingLossInvoices.Main.Begin;" sap:VirtualizedContainerService.HintSize="750,173" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+      <ui:LogMessage.Level>
+        <InArgument x:TypeArguments="ui:LogLevel">
+          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Level>
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"RPADev-S04P02-CalculatingLossInvoices.Main.Begin;"</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <Sequence sap2010:Annotation.AnnotationText="Check the invoices issued to bankruptcy clients&#xA;&#xA;Check which of the invoices in an Excel file were issued to clients in bankruptcy and calculate the sum of the invoices to be recorded as loss.&#xA;&#xA;Input files:&#xA;&#xA;Invoices (.xlsx)&#xA;Clients (.csv)&#xA;&#xA;--------&#xA;&#xA;File: RPADev-S04P02-CalculatingLossInvoices-Clients.csv&#xA;Sheet Name: RPADev-S04P02-CalculatingLossIn&#xA;Headers &amp; First Row:&#xA;ClientID ClientName IsBankrupt&#xA;1 Unit&amp;Products Inc. TRUE&#xA;&#xA;File: RPADev-S04P02-CalculatingLossInvoices-Invoices.xlsx&#xA;Sheet Name: Sheet1&#xA;Headers &amp; First Row:&#xA;InvoiceID ClientName InvoiceValue&#xA;1 Unit&amp;Products Inc. 100&#xA;&#xA;--------&#xA;&#xA;Target&#xA;Agitude = 750&#xA;Cryptomba = 730&#xA;Epiloo = 2180&#xA;Teamatix = 350&#xA;Travels Print = 570&#xA;Unit&amp;Products Inc. = 1305" DisplayName="Sequence Initialization" sap:VirtualizedContainerService.HintSize="750,1712" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="filePathClients">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="filePathInvoices">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="worksheetName">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MultipleAssign DisplayName="Multiple Assign Initialization" sap:VirtualizedContainerService.HintSize="534,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">filePathClients</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Data\input\RPADev-S04P02-CalculatingLossInvoices-Clients.csv</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">filePathInvoices</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Data\Input\RPADev-S04P02-CalculatingLossInvoices-Invoices.xlsx</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">worksheetName</CSharpReference>
+                </OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Sheet1</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+      <TryCatch DisplayName="Try Catch Read Files" sap:VirtualizedContainerService.HintSize="534,875" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+        <TryCatch.Try>
+          <Sequence DisplayName="Sequence Try Read Files" sap:VirtualizedContainerService.HintSize="496,382" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadCsvFile Delimitator="Comma" DisplayName="Read CSV Client File" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
+              <ui:ReadCsvFile.DataTable>
+                <OutArgument x:TypeArguments="sd:DataTable">
+                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">dt_Clients</CSharpReference>
+                </OutArgument>
+              </ui:ReadCsvFile.DataTable>
+              <ui:ReadCsvFile.FilePath>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">filePathClients</CSharpValue>
+                </InArgument>
+              </ui:ReadCsvFile.FilePath>
+            </ui:ReadCsvFile>
+            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook Invoice File" sap:VirtualizedContainerService.HintSize="434,111" sap2010:WorkflowViewState.IdRef="ReadRange_2">
+              <ui:ReadRange.DataTable>
+                <OutArgument x:TypeArguments="sd:DataTable">
+                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">dt_Invoices</CSharpReference>
+                </OutArgument>
+              </ui:ReadRange.DataTable>
+              <ui:ReadRange.SheetName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">worksheetName</CSharpValue>
+                </InArgument>
+              </ui:ReadRange.SheetName>
+              <ui:ReadRange.WorkbookPath>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">filePathInvoices</CSharpValue>
+                </InArgument>
+              </ui:ReadRange.WorkbookPath>
+            </ui:ReadRange>
+          </Sequence>
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,160" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ActivityAction x:TypeArguments="s:Exception">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              </ActivityAction.Argument>
+              <Throw DisplayName="Throw RPADev-S04P02-CalculatingLossInvoices.Main.Exception.ReadFiles;" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_1">
+                <InArgument x:TypeArguments="s:Exception">
+                  <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">new SystemException("RPADev-S04P02-CalculatingLossInvoices.Main.Exception.ReadFiles;" + Environment.NewLine + "Exception Message: " + exception.Message + Environment.NewLine + "Exception Source: " + exception.Source)</CSharpValue>
+                </InArgument>
+              </Throw>
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+      </TryCatch>
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Join CustInvoiceTable and CustTable and filter on Bankrupt." DisplayName="Sequence Operation" sap:VirtualizedContainerService.HintSize="750,2717" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="customerCurrent">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="customerPrevious">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:Double" Default="0" Name="invoiceLossValueTotal" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:JoinDataTables sap2010:Annotation.AnnotationText="select * from custInvoiceTable&#xA;  join custTable&#xA;    where custTable.ClientName ==&#xA;      custInvoiceTable.ClientName;" DisplayName="Join Data Tables Into dt_DataMerged" sap:VirtualizedContainerService.HintSize="688,164" sap2010:WorkflowViewState.IdRef="JoinDataTables_1" JoinType="Inner">
+        <ui:JoinDataTables.Arguments>
+          <scg:List x:TypeArguments="ui:JoinOperationArgument" Capacity="4">
+            <ui:JoinOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EQ">
+              <ui:JoinOperationArgument.Column1>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">"ClientName"</CSharpValue>
+                </InArgument>
+              </ui:JoinOperationArgument.Column1>
+              <ui:JoinOperationArgument.Column2>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">"ClientName"</CSharpValue>
+                </InArgument>
+              </ui:JoinOperationArgument.Column2>
+            </ui:JoinOperationArgument>
+          </scg:List>
+        </ui:JoinDataTables.Arguments>
+        <ui:JoinDataTables.DataTable1>
+          <InArgument x:TypeArguments="sd:DataTable">
+            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">dt_Clients</CSharpValue>
+          </InArgument>
+        </ui:JoinDataTables.DataTable1>
+        <ui:JoinDataTables.DataTable2>
+          <InArgument x:TypeArguments="sd:DataTable">
+            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">dt_Invoices</CSharpValue>
+          </InArgument>
+        </ui:JoinDataTables.DataTable2>
+        <ui:JoinDataTables.OutputDataTable>
+          <OutArgument x:TypeArguments="sd:DataTable">
+            <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">dt_DataMerged</CSharpReference>
+          </OutArgument>
+        </ui:JoinDataTables.OutputDataTable>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:JoinDataTables>
+      <ui:FilterDataTable sap2010:Annotation.AnnotationText="Keep IsBankrupt == &quot;TRUE&quot;" DisplayName="Filter Data Table Keep Bankrupt" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="688,224" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" SelectColumnsMode="Keep">
+        <ui:FilterDataTable.DataTable>
+          <InArgument x:TypeArguments="sd:DataTable">
+            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">dt_DataMerged</CSharpValue>
+          </InArgument>
+        </ui:FilterDataTable.DataTable>
+        <ui:FilterDataTable.Filters>
+          <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+            <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+              <ui:FilterOperationArgument.Column>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">"IsBankrupt"</CSharpValue>
+                </InArgument>
+              </ui:FilterOperationArgument.Column>
+              <ui:FilterOperationArgument.Operand>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">"TRUE"</CSharpValue>
+                </InArgument>
+              </ui:FilterOperationArgument.Operand>
+            </ui:FilterOperationArgument>
+          </scg:List>
+        </ui:FilterDataTable.Filters>
+        <ui:FilterDataTable.OutputDataTable>
+          <OutArgument x:TypeArguments="sd:DataTable">
+            <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">dt_DataMerged</CSharpReference>
+          </OutArgument>
+        </ui:FilterDataTable.OutputDataTable>
+        <ui:FilterDataTable.SelectColumns>
+          <scg:List x:TypeArguments="InArgument" Capacity="4">
+            <x:Null />
+          </scg:List>
+        </ui:FilterDataTable.SelectColumns>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:FilterDataTable>
+      <ui:SortDataTable ColumnName="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Hardcodeing the sort index to 1.&#xA;Merged header values: InvoiceID, ClientName, InvoiceValue, ClientID, ClientName, IsBankrupt" DisplayName="Sort Data Table Sort Data" sap:VirtualizedContainerService.HintSize="688,169" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" SortOrder="Ascending">
+        <ui:SortDataTable.ColumnIndex>
+          <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+            <CSharpValue x:TypeArguments="s:Nullable(x:Int32)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">1</CSharpValue>
+          </InArgument>
+        </ui:SortDataTable.ColumnIndex>
+        <ui:SortDataTable.DataTable>
+          <InArgument x:TypeArguments="sd:DataTable">
+            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">dt_DataMerged</CSharpValue>
+          </InArgument>
+        </ui:SortDataTable.DataTable>
+        <ui:SortDataTable.OutputDataTable>
+          <OutArgument x:TypeArguments="sd:DataTable">
+            <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">dt_DataMerged</CSharpReference>
+          </OutArgument>
+        </ui:SortDataTable.OutputDataTable>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:SortDataTable>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table Data Merged" sap:VirtualizedContainerService.HintSize="688,2009" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body Data Merged" sap:VirtualizedContainerService.HintSize="654,1822" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="ClientName" DisplayName="Get Row Item ClientName" sap:VirtualizedContainerService.HintSize="592,219" sap2010:WorkflowViewState.IdRef="GetRowItem_1">
+                <ui:GetRowItem.Row>
+                  <InArgument x:TypeArguments="sd:DataRow">
+                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">CurrentRow</CSharpValue>
+                  </InArgument>
+                </ui:GetRowItem.Row>
+                <ui:GetRowItem.Value>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">customerCurrent</CSharpReference>
+                  </OutArgument>
+                </ui:GetRowItem.Value>
+              </ui:GetRowItem>
+              <If DisplayName="If New Customer Found" sap:VirtualizedContainerService.HintSize="592,605" sap2010:WorkflowViewState.IdRef="If_1">
+                <If.Condition>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">customerCurrent != customerPrevious</CSharpValue>
+                  </InArgument>
+                </If.Condition>
+                <If.Then>
+                  <Sequence DisplayName="Then New Customerr Operations" sap:VirtualizedContainerService.HintSize="496,335" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="Assign Update Customer Currrent" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">
+                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">customerPrevious</CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">customerCurrent</CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap2010:Annotation.AnnotationText="Reset the LossTotalValue value when the customer account changes." DisplayName="Assign Reset LossValueTotal" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Double">
+                          <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_29">invoiceLossValueTotal</CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Double">0</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <Sequence DisplayName="Sequence Add Invoice Value" sap:VirtualizedContainerService.HintSize="592,913" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:Double" Default="0" Name="invoiceValue" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="InvoiceValue" DisplayName="Get Row Item Invoice Value" sap:VirtualizedContainerService.HintSize="530,219" sap2010:WorkflowViewState.IdRef="GetRowItem_2">
+                  <ui:GetRowItem.Row>
+                    <InArgument x:TypeArguments="sd:DataRow">
+                      <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">CurrentRow</CSharpValue>
+                    </InArgument>
+                  </ui:GetRowItem.Row>
+                  <ui:GetRowItem.Value>
+                    <OutArgument x:TypeArguments="x:Double">
+                      <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">invoiceValue</CSharpReference>
+                    </OutArgument>
+                  </ui:GetRowItem.Value>
+                </ui:GetRowItem>
+                <If DisplayName="If Set Loss Total" sap:VirtualizedContainerService.HintSize="530,583" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If.Condition>
+                    <InArgument x:TypeArguments="x:Boolean">
+                      <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">invoiceLossTotals.ContainsKey(customerCurrent)</CSharpValue>
+                    </InArgument>
+                  </If.Condition>
+                  <If.Then>
+                    <Sequence DisplayName="Then Update Loss Total" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Assign Update Loss Total" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Double">
+                            <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">invoiceLossTotals[customerCurrent]</CSharpReference>
+                          </OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Double">
+                            <CSharpValue x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">invoiceLossTotals[customerCurrent] + invoiceValue</CSharpValue>
+                          </InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else Add New Loss Total" sap:VirtualizedContainerService.HintSize="496,232" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap2010:Annotation.AnnotationText="This could work with the previous assign but for best practice efforts and correctness both paths are defined." DisplayName="Assign New Loss Total" sap:VirtualizedContainerService.HintSize="434,147" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Double">
+                            <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">invoiceLossTotals[customerCurrent]</CSharpReference>
+                          </OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Double">
+                            <CSharpValue x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">invoiceValue</CSharpValue>
+                          </InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+        <ui:ForEachRow.DataTable>
+          <InArgument x:TypeArguments="sd:DataTable">
+            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">dt_DataMerged</CSharpValue>
+          </InArgument>
+        </ui:ForEachRow.DataTable>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEachRow>
+    </Sequence>
+    <Sequence DisplayName="Sequence Result" sap:VirtualizedContainerService.HintSize="750,670" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Double" Default="0" Name="invoiceLossValueTotalPrint" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Double)" CurrentIndex="{x:Null}" DisplayName="For Each Print Invoice Data" sap:VirtualizedContainerService.HintSize="530,386" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:Double)">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:Double)" Name="currentItem" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body Print Invoice Data" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign DisplayName="Assign Invoice Loss Total" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Double">
+                    <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_31">invoiceLossValueTotalPrint</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Double">
+                    <CSharpValue x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">invoiceLossValueTotalPrint + currentItem.Value</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+        <ui:ForEach.Values>
+          <InArgument x:TypeArguments="sc:IEnumerable">
+            <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">invoiceLossTotals</CSharpValue>
+          </InArgument>
+        </ui:ForEach.Values>
+      </ui:ForEach>
+      <ui:LogMessage DisplayName="Log Message RPADev-S04P02-CalculatingLossInvoices.Main.Print;" sap:VirtualizedContainerService.HintSize="530,164" sap2010:WorkflowViewState.IdRef="LogMessage_3">
+        <ui:LogMessage.Level>
+          <InArgument x:TypeArguments="ui:LogLevel">
+            <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Level>
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43" xml:space="preserve">"RPADev-S04P02-CalculatingLossInvoices.Main.Print;" + Environment.NewLine + 
+string.Join(Environment.NewLine, invoiceLossTotals.ToArray()) + Environment.NewLine + 
+"The total amount lost from all invoices: " + invoiceLossValueTotalPrint.ToString()</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message RPADev-S04P02-CalculatingLossInvoices.Main.End;" sap:VirtualizedContainerService.HintSize="750,164" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+      <ui:LogMessage.Level>
+        <InArgument x:TypeArguments="ui:LogLevel">
+          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Level>
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">"RPADev-S04P02-CalculatingLossInvoices.Main.End;"</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>
